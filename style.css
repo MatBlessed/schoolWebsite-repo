@@ -130,3 +130,19 @@ section{
     box-sizing: content-box;
     padding: 20px;
 }
+
+.rank div{
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.rank div p{
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+}
+
+span div img{
+    width: 100px;
+    height: 100px;
+}
