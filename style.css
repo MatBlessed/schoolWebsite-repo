@@ -118,7 +118,7 @@ video{
     transition: .5s;
 }
 
-section{
+.feedback, .events{
     height: 50vh;
     display: flex;
     justify-content: space-between;
@@ -130,20 +130,25 @@ section{
     padding: 20px;
 }
 
-fieldset {
-    height: 250px;
-}
-
-
-
-.rank fieldset{
-    
+.numbers{
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 10px;
+    
 }
 
-.rank fieldset div{
-    padding-left: 10px;
+.numbers h1{
+    margin-bottom: 10px;
 }
 
+.numbers span{
+    padding: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 10px;
+    text-align: center;
+}
