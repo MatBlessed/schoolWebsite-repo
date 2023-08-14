@@ -13,6 +13,7 @@ body{
     overflow-x: hidden;
     scroll-behavior: smooth;
     background-color: var(--secondary-color);
+    
     font-family: Arial, Helvetica, sans-serif;
 
 }
@@ -129,18 +130,20 @@ section{
     padding: 20px;
 }
 
-.rank div{
-    display: inline-block;
-    padding-right: 5px;
+fieldset {
+    height: 250px;
 }
 
-.rank div p{
-    justify-content: left;
+
+
+.rank fieldset{
+    
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
 
-span div img{
-    width: 100px;
-    height: 100px;
+.rank fieldset div{
+    padding-left: 10px;
 }
+
