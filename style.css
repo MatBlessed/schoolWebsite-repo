@@ -137,7 +137,7 @@ video{
     margin-left: 20px;
     margin-right: 20px;
     padding: 20px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     border-radius: 10px;
     
 }
@@ -151,4 +151,20 @@ video{
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     border-radius: 10px;
     text-align: center;
+}
+
+.events span{
+    padding: 20px;
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+}
+
+.events span img{
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin: 5px;
 }
