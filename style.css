@@ -118,7 +118,7 @@ video{
     transition: .5s;
 }
 
-.feedback, .events{
+.feedback{
     height: 50vh;
     display: flex;
     justify-content: space-between;
@@ -153,18 +153,29 @@ video{
     text-align: center;
 }
 
+.events{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    border: 1px;
+
+    margin: 5px;
+    margin-top: 100px;
+    box-sizing: content-box;
+}
+
 .events span{
-    padding: 20px;
+    padding: 10px;
     width: 33.33%;
     height: 100%;
     text-align: center;
 }
 
 .events span img{
-    width: 100%;
-    height: fit-content;
-    overflow: hidden;
+    width: 90%;
+    height: auto;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    margin: 5px;
 }
