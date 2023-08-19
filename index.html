@@ -7,141 +7,206 @@
         <link rel="icon" type="image/x-icon" href="Color logo with background.ico">
         <title>MALTECH HIGH SCHOOL</title>
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!--<link rel="stylesheet" href="style.css">-->
+        <style>
+            img{
+                width: 200px;
+                height: 200px;
+            }
+
+            video{
+                width: 100%;
+                height: 100%;
+            }
+
+            div{
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
     </head>
     
     <body>
-        <header>
-            <div class="navbar" id="navbar">
-                <div class="logo_img" id="logo">
-                    <img src="Media/Pics/logo2.png" alt="logo">
-                </div>
-                <div>
-                    <nav>
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About Us</a>
-                        <a href="admissions.html">Admissions</a>
-                        <a href="studentlife.html">On Campus</a>
-                        <a href="contact.html">Contact Us</a>
-                    </nav>
+        <header class="container-fluid">
+            <div class="row">
+                <div class="navbar" id="navbar">
+                    <div class="col-sm-4">
+                        <div class="logo_img" id="logo">
+                            <img src="Media/Pics/logo2.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <nav>
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About Us</a>
+                            <a href="admissions.html">Admissions</a>
+                            <a href="studentlife.html">On Campus</a>
+                            <a href="contact.html">Contact Us</a>
+                        </nav>
+                    </div>
                 </div>
             </div>
-            <div class="hero_vid">
-                <video autoplay muted loop preload="auto">
-                    <source src="Media/Video/back_1.mp4" type="video/mp4">
-                </video>
-                <div class="hero_text">
-                    <h1>MALTECH HIGH SCHOOL</h1>
-                    <button>Get Your Admission</button>
+
+            <div class="row">
+                <div class="hero_vid">
+                    <video autoplay muted loop preload="auto">
+                        <source src="Media/Video/back_1.mp4" type="video/mp4">
+                    </video>
+                    <div class="hero_text">
+                        <h1>MALTECH HIGH SCHOOL</h1>
+                        <button>Get Your Admission</button>
+                    </div>
                 </div>
             </div>
         </header>
         
-        <main>
-            <section class="numbers">
-                <span class="rank">
-                    <div><h1>#1</h1></div>
-                    <div><h2>Best School in Technology</h2></div>
-                </span>
-                <span>
-                    <div><h1>10 Years</h1></div>
-                    <div><h2>Since 2013</h2></div>
-                </span>
-                <span>
-                    <div><h1>10,000</h1></div>
-                    <div><h2>Number of Students</h2></div>
-                </span>
-                <span>
-                    <div><h1>$50,000</h1></div>
-                    <div><h2>Given in Scholarship</h2></div>
-                </span>
-            </section>
+        <main class="container-fluid">
+            <div class="row">
+                <!--<section class="numbers">-->
+                    <div class="col">
+                        <span class="rank">
+                            <div><h1>#1</h1></div>
+                            <div><h2>Best School in Technology</h2></div>
+                        </span>
+                    </div>
 
-            <section class="events">
-                <span>
-                    <img src="Media/Pics/fair.png" alt="fair">
-                    <div class="overlay">
-                        
-                        
-                        <button>Register</button>
+                    <div class="col">
+                        <span>
+                            <div><h1>10 Years</h1></div>
+                            <div><h2>Since 2013</h2></div>
+                        </span>
                     </div>
-                </span>
-                <span>
-                    <img src="Media/Pics/seminar.png" alt="seminar">
-                    <div class="overlay">
-                        
-                        
-                        <button>Register</button>
+
+                    <div class="col">
+                        <span>
+                            <div><h1>10,000</h1></div>
+                            <div><h2>Number of Students</h2></div>
+                        </span>
                     </div>
-                </span>
-                <span>
-                    <img src="Media/Pics/camp.png" alt="camp">
-                    <div class="overlay">
-                        
-                        
-                        <button>Register</button>
+
+                    <div class="col">
+                        <span>
+                            <div><h1>$50,000</h1></div>
+                            <div><h2>Given in Scholarship</h2></div>
+                        </span>
                     </div>
-                </span>
-            </section>
+                <!--</section>-->
+            </div>
+
+            <div class="row">
+                <!--<section class="events">-->
+                    <div class="col">
+                        <span>
+                            <img src="Media/Pics/fair.png" alt="fair">
+                            <div class="overlay">
+                                <button>Register</button>
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="col">
+                        <span>
+                            <img src="Media/Pics/seminar.png" alt="seminar">
+                            <div class="overlay">
+                                <button>Register</button>
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="col">
+                        <span>
+                            <img src="Media/Pics/camp.png" alt="camp">
+                            <div class="overlay">
+                                <button>Register</button>
+                            </div>
+                        </span>
+                    </div>
+                <!--</section>-->
+            </div>
             
-            <section class="feedback">
-                <span>
-                    <div class="tag">#Parent</div>
-                    <div class="feed-img">
-                        <img src="Media/Pics/prof female.jpg" alt="parent">
+            <h2>What Our Friends Say</h2>
+            <div class="row">
+                <!--<section class="feedback">-->
+
+                    <div class="col">
+                        <span>
+                            <div class="tag">#Parent</div>
+                            <div class="feed-img">
+                                <img src="Media/Pics/prof female.jpg" alt="parent">
+                            </div>
+                            <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                        </span>
                     </div>
-                    <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
-                </span>
-                <span>
-                    <div class="tag">#Student</div>
-                    <div class="feed-img">
-                        <img src="Media/Pics/prof male.jpg" alt="student">
+
+                    <div class="col">
+                    <span>
+                        <div class="tag">#Student</div>
+                        <div class="feed-img">
+                            <img src="Media/Pics/prof male.jpg" alt="student">
+                        </div>
+                        <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                    </span>
                     </div>
-                    <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
-                </span>
-                <span>
-                    <div class="tag">#Parent</div>
-                    <div class="feed-img">
-                        <img src="Media/Pics/prof female.jpg" alt="parent">
+
+                    <div class="col">
+                    <span>
+                        <div class="tag">#Parent</div>
+                        <div class="feed-img">
+                            <img src="Media/Pics/prof female.jpg" alt="parent">
+                        </div>
+                        <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                    </span>
                     </div>
-                    <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
-                </span>
-                <span>
-                    <div class="tag">#Alumni</div>
-                    <div class="feed-img">
-                        <img src="Media/Pics/prof male.jpg" alt="alumni">
+
+                    <div class="col">
+                    <span>
+                        <div class="tag">#Alumni</div>
+                        <div class="feed-img">
+                            <img src="Media/Pics/prof male.jpg" alt="alumni">
+                        </div>
+                        <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
+                    </span>
                     </div>
-                    <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
-                </span>
-            </section>
+
+                <!--</section>-->
+            </div>
         </main>
 
-        <footer>
-            <div>
-                <h2>Quick Links</h2>
-                <a href="index.html">Home</a>
-                <a href="admissions.html">Admissions</a>
-                <a href="contact.html">Contact Us</a>
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h2>Quick Links</h2>
+                    <a href="index.html">Home</a>
+                    <a href="admissions.html">Admissions</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="col">
+                    <h2>Social Platforms</h2>
+                    <a href="https://www.facebook.com/">Facebook</a>
+                    <a href="https://www.instagram.com/">Instagram</a>
+                    <a href="https://www.youtube.com/">Youtube</a>
+                    <a href="https://www.twitter.com/">Twitter</a>
+                </div>
+                <div class="col">
+                    <h2>Privacy Policy</h2>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+                <div class="col">
+                    <h2>Subscribe to Our Newsletters</h2>
+                    <form>
+                        <input type="email" placeholder="Enter Your Email Address">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
+                <div class="col">&copy; 2020 MALTECH High School All Rights Reserved</div>
             </div>
-            <div>
-                <h2>Social Platforms</h2>
-                <a href="https://www.facebook.com/">Facebook</a>
-                <a href="https://www.instagram.com/">Instagram</a>
-                <a href="https://www.youtube.com/">Youtube</a>
-                <a href="https://www.twitter.com/">Twitter</a>
-            </div>
-            <div>
-                <h2>Privacy Policy</h2>
-                <a href="privacy.html">Privacy Policy</a>
-            </div>
-            <div>
-                <h2>Subscribe to Our Newsletters</h2>
-                <form>
-                    <input type="email" placeholder="Enter Your Email Address">
-                    <input type="submit" value="Subscribe">
-                </form>
-            </div>
-            <div>&copy; 2020 MALTECH High School All Rights Reserved</div>
         </footer>
         <script src="script.js"></script>
     </body>
