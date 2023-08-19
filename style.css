@@ -262,3 +262,15 @@ video{
     height: 100%;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+
+.feedback span:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: .5s;
+}
+
+.feedback span:hover .feed-img img{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/* Footer */
