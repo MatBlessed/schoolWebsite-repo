@@ -40,7 +40,7 @@ header {
     z-index: 1;
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
     padding: 0 20px;
-    font-size: 25px;
+    font-size: 20px;
     transition: 0.1s;
 }
 
@@ -120,17 +120,7 @@ video{
     transition: .5s;
 }
 
-.feedback{
-    height: 50vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--secondary-color);
-    border: 1px solid black;
-    margin: 20px;
-    box-sizing: content-box;
-    padding: 20px;
-}
+
 
 .numbers{
     display: flex;
@@ -155,22 +145,21 @@ video{
     text-align: center;
 }
 
+/* Events */
+
 .events{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--secondary-color);
     border: 1px;
-
-    margin: 5px;
-    margin-top: 100px;
+    margin: 100px 50px;
     box-sizing: content-box;
 }
 
 .events span{
     margin: 20px;
-    padding: 10px;
     width: 33.33%;
     height: 100%;
     text-align: center;
@@ -187,9 +176,12 @@ video{
 .overlay {
     position: absolute;
     box-sizing: border-box;
+    width: 100%;
     bottom: 0;
     transform: translate(0, 100%);
+    opacity: 0;
     padding: 15px;
+    padding-right: 15px;
     background-color: rgba(0,0,0,0.5);
     text-align:center;
     transition: all 0.2s ease-in;
@@ -198,4 +190,69 @@ video{
 .events span:hover .overlay {
     transform: translate(0, 0);
 	transition: all 0.2s ease-in;
+    height: 20%;
+    opacity: 1;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.overlay button{
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--secondary-color);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.overlay button:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: .5s;
+}
+
+/* Feedback */
+
+.feedback{
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    margin: 20px;
+    box-sizing: content-box;
+    padding: 20px;
+}
+
+.feedback span{
+    margin: 20px;
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 20px 0px 20px 0px;
+    overflow: hidden;
+}
+
+.tag{
+    float: left;
+    
+    padding: 8px;
+    background-color: var(--primary-color);
+    border-radius: 0 0 20px 0px;
+    
+}
+
+.feed-img{
+    width: 50%;
+    height: 50%;
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
